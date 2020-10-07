@@ -1,0 +1,453 @@
+* {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: #48607e;
+}
+
+#container {
+    width: 1024px;
+}
+
+.btnBusca {
+    border: 1px solid #2c3e50;
+    background: #8c3680;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    overflow: hidden;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+}
+
+.btnBusca:hover {
+    background: #2c3e50;
+}
+
+.btnBusca::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #8c3680;
+    z-index: -1;
+    transition: 0.8s;
+
+}
+
+nav {
+    background: #8c3680;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: #2c3e50;
+    transition: .5s;
+    color: white;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+@media (min-width: 320px) {
+    #container {
+        width: 320px;
+    }
+
+    #topo {
+        height: calc(100vh - 120px)
+    }
+
+    nav {
+        width: 320px;
+    }
+}
+
+@media (min-width: 480px) {
+    #container {
+        width: 480px;
+
+    }
+
+    #topo {
+        height: calc(100vh - 290px)
+    }
+
+    nav {
+        width: 480px;
+    }
+}
+
+@media (min-width: 600px) {
+    #container {
+        width: 600px;
+
+    }
+
+    #topo {
+        height: calc(100vh - 220px)
+    }
+
+    nav {
+        width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    #container {
+        width: 768px;
+
+    }
+
+    #topo {
+        height: calc(100vh - 120px)
+    }
+
+    nav {
+        width: 768px;
+    }
+}
+
+@media (min-width: 900px) {
+    #container {
+        width: 900px;
+
+    }
+
+    #topo {
+        height: calc(100vh - 50px)
+    }
+
+    nav {
+        width: 900px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #container {
+        width: 1024px;
+
+    }
+
+    #topo {
+        height: calc(100vh - 1px)
+    }
+
+    nav {
+        width: 1024px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #container {
+        width: 1200px;
+    }
+
+    #topo {
+        height: calc(100vh - -40px)
+    }
+
+    nav {
+        width: 1200px;
+    }
+}
+
+
+@media (min-width: 576px) {
+
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media (min-width: 768px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media (max-width: 900px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #8c3680;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+
+}
+
+
+#topo {
+    background: url(BestShows.jpg) no-repeat;
+    background-size: 100%;
+    margin: auto;
+}
+
+#section1 {
+    height: auto;
+    background: aliceblue;
+    border: 1px solid #8c3680;
+}
+
+#section2 {
+    background: aliceblue;
+    height: auto;
+    border: 1px solid #8c3680;
+
+
+}
+
+#section3 {
+    padding-bottom: 150px;
+    height: auto;
+    background: aliceblue;
+    border: 1px solid #8c3680;
+    text-align: center;
+}
+
+#termoBusca {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+#termoBuscaAtor {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+.divseries {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: white;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 220px;
+    height: 300px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.divseries:hover {
+    color: white;
+    opacity: 5;
+    background: #2c3e50;
+    transform: translate3d(0ch, -1ch, 5em);
+}
+
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #8c3680;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 3em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.sobre {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    background: #8c3680;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+form {
+    background: lavender;
+    border: 2px solid #8c3680;
+    border-radius: 3px;
+    width: 400px;
+    padding: 30px 30px;
+}
+
+.imgLogo {
+    width: 60px;
+    height: 60px;
+}
+
+
+#divHeader {
+    display: block;
+}
+
+#email {
+    border-radius: 5px;
+    height: 30px;
+}
+
+#nome {
+    border-radius: 5px;
+    height: 30px;
+}
+
+#msg {
+    border-radius: 5px;
+
+}
+
+.fa-linkedin-in {
+    color: white;
+    float: left;
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+.fa-chevron-up {
+    color: white;
+    float: right;
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+#pFooter {
+    padding-bottom: 10px;
+}
+
+#ancoraLogo {
+    color: white;
+    text-decoration: none;
+}
+
+#logotipo {
+    padding-right: 10px;
+}
+
+.fa-home {
+    color: white;
+    float: right;
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+.divsAT {
+    border: 2px solid #8c3680 ;
+    background-color: azure;
+}

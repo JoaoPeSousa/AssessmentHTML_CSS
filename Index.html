@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Joao Pedro">
+    <meta name="description" content="Info Series">
+    <meta name="key" content="sites, seriado, atores">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Series</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+<body id="body">
+<div id="container">
+    <main>
+        <header id="topo" title="Banner do site">
+            <div id="divHeader">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <label class="logo"><a id="ancoraLogo"  href="#topo"><i id="logotipo" class="fas fa-tv"></i>Info Series</a> </label>
+                    <ul>
+                        <li><a class="active" href="Index.html">Home</a></li>
+                        <li><a href="#section1">Shows</a></li>
+                        <li><a href="#section2">Atores</a></li>
+                        <li><a href="#section3">Contato</a></li>
+                        <li><a href="Assessment.html">Assessment</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="section1">
+            <h1>
+                Pesquise pelo seu show preferido!
+            </h1>
+            <div>
+                <input type="text" id="termoBusca" placeholder="Insira o nome do seriado"/> <br>
+                <button class="btnBusca" onclick="buscarSerie()">
+                    <i class="fas fa-search"> Buscar</i>
+
+
+                </button>
+            </div>
+                <section id="sectionAPI">
+                    <header>
+                        <h2>Pronto!</h2>
+                    </header>
+                </section>
+        </div>
+        <div id="section2">
+            <h1>
+                Pesquise pelo seu ator preferido!
+            </h1>
+            <div>
+                <input type="text" id="termoBuscaAtor" placeholder="Insira o nome do ator/atriz"/> <br>
+                <button class="btnBusca" onclick="buscarAtor()">
+                    <i class="fas fa-search"> Buscar</i>
+                </button>
+            </div>
+
+            <section id="sectionAPI2">
+                <header>
+                    <h2>Pronto!</h2>
+                </header>
+            </section>
+
+        </div>
+        <div id="section3">
+            <h1>
+                Entre em contato conosco!
+            </h1>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input required type="text" id="nome" placeholder="Insira seu nome"/><br>
+                <label for="email">Email:</label><br>
+                <input required type="email" id="email" placeholder="Insira seu email"/><br>
+                <label for="msg">Mensagem:</label><br>
+                <textarea required id="msg" name="mensagem" rows="5" cols="33"></textarea> <br>
+                <button class="btnBusca">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <p id="pFooter">&copy; Instituto Infnet - Assessment Interface Web
+                <a href="#topo">
+                    <i class="fas fa-chevron-up">
+                    </i>
+                </a>
+                <a href="https://www.linkedin.com/in/joaopedro-sousa/"
+                   class="social-icon si-rounded si-small si-linkedin">
+                    <i class="fab fa-linkedin-in"></i> </a></p>
+        </div>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
